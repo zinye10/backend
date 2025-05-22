@@ -1,0 +1,185 @@
+Microsoft Windows [Version 10.0.26100.4061]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>cd C:\Users\octob\Test\graphql\graphql-recepe-server
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>npm install
+
+> graphqlserver@1.0.0 postinstall
+> winser -i -s
+
+
+up to date, audited 323 packages in 1s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>node service.js
+{
+  loc: 'winsw.js ~line 77',
+  xml: [
+    { id: 'graphqlserver.exe' },
+    { name: 'graphqlserver' },
+    { description: 'Apollo GraphQL server on Windows' },
+    { executable: 'C:\\Program Files\\nodejs\\node.exe' },
+    { argument: '--harmony' },
+    {
+      argument: 'C:\\Users\\octob\\Test\\graphql\\graphql-recepe-server\\node_modules\\node-windows\\lib\\wrapper.js'
+    }
+  ],
+  config: {
+    name: 'graphqlserver',
+    id: 'graphqlserver.exe',
+    nodeOptions: '--harmony',
+    script: 'C:\\Users\\octob\\Test\\graphql\\graphql-recepe-server\\node_modules\\node-windows\\lib\\wrapper.js',
+    scriptOptions: '',
+    wrapperArgs: [
+      '--file',
+      'C:\\Users\\octob\\Test\\graphql\\graphql-recepe-server\\index.js',
+      '--scriptoptions=',
+      '--log',
+      'graphqlserver wrapper',
+      '--grow',
+      0.25,
+      '--wait',
+      1,
+      '--maxrestarts',
+      3,
+      '--abortonerror',
+      'n',
+      '--stopparentfirst',
+      undefined
+    ],
+    description: 'Apollo GraphQL server on Windows',
+    logpath: null,
+    env: [ [Object] ],
+    execPath: null,
+    logOnAs: {
+      account: null,
+      password: null,
+      domain: 'MSI',
+      mungeCredentialsAfterInstall: true
+    },
+    workingdirectory: 'C:\\Users\\octob\\Test\\graphql\\graphql-recepe-server',
+    stopparentfirst: undefined,
+    stoptimeout: 30,
+    logmode: 'rotate',
+    logging: undefined,
+    allowServiceLogon: undefined
+  }
+}
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>npm install
+
+> graphqlserver@1.0.0 postinstall
+> winser -i -s
+
+Error: Command failed: "C:\Users\octob\Test\graphql\graphql-recepe-server\node_modules\winser\bin\nssm.exe" install "graphqlserver" node index.js
+Error creating service!
+CreateService(): The specified service already exists.
+
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at ChildProcess.exithandler (node:child_process:414:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5) {
+  code: 5,
+  killed: false,
+  signal: null,
+  cmd: '"C:\\Users\\octob\\Test\\graphql\\graphql-recepe-server\\node_modules\\winser\\bin\\nssm.exe" install "graphqlserver" node index.js'
+}
+npm error code 1
+npm error path C:\Users\octob\Test\graphql\graphql-recepe-server
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c winser -i -s
+npm error A complete log of this run can be found in: C:\Users\octob\AppData\Local\npm-cache\_logs\2025-05-22T15_56_52_493Z-debug-0.log
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>node uninstall.js
+Service uninstalled
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>npm install
+
+> graphqlserver@1.0.0 postinstall
+> winser -i -s
+
+Error: Command failed: "C:\Users\octob\Test\graphql\graphql-recepe-server\node_modules\winser\bin\nssm.exe" install "graphqlserver" node index.js
+Error creating service!
+CreateService(): The specified service already exists.
+
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at ChildProcess.exithandler (node:child_process:414:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5) {
+  code: 5,
+  killed: false,
+  signal: null,
+  cmd: '"C:\\Users\\octob\\Test\\graphql\\graphql-recepe-server\\node_modules\\winser\\bin\\nssm.exe" install "graphqlserver" node index.js'
+}
+npm error code 1
+npm error path C:\Users\octob\Test\graphql\graphql-recepe-server
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c winser -i -s
+npm error A complete log of this run can be found in: C:\Users\octob\AppData\Local\npm-cache\_logs\2025-05-22T16_00_55_930Z-debug-0.log
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>npx winser -r -x
+The service for "graphqlserver" was removed.
+Can't open service!
+OpenService(): The specified service does not exist as an installed service.
+
+
+Can't open service!
+OpenService(): The specified service does not exist as an installed service.
+
+
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>npm install
+
+> graphqlserver@1.0.0 postinstall
+> winser -i -s
+
+
+up to date, audited 323 packages in 1s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\octob\Test\graphql\graphql-recepe-server>
+
+//local cmd より
+PS C:\Users\octob\Test\graphql\graphql-recepe-server> npm install winser --save-dev
+
+added 3 packages, and audited 310 packages in 2s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\octob\Test\graphql\graphql-recepe-server> npm install node-windows --save
+
+added 13 packages, and audited 323 packages in 2s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\octob\Test\graphql\graphql-recepe-server> npm install
+
+> graphqlserver@1.0.0 postinstall
+> winser -i -s
+
+No rights to manage services.
+npm error code 1
+npm error path C:\Users\octob\Test\graphql\graphql-recepe-server
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c winser -i -s
+npm error A complete log of this run can be found in: C:\Users\octob\AppData\Local\npm-cache\_logs\2025-05-22T15_45_04_732Z-debug-0.log
+PS C:\Users\octob\Test\graphql\graphql-recepe-server>
